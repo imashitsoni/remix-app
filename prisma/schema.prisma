@@ -19,6 +19,9 @@ model Session {
   expires     DateTime?
   accessToken String
   userId      BigInt?
+  firstName   String?   // Check if this is missing in DB
+  lastName    String?
+  email       String?
 }
  
 model QRCode {
