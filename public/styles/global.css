@@ -1,0 +1,28 @@
+.employee-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  padding: 8px 15px;
+}
+
+h1 {
+  padding: 8px 15px;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+form.AddEmployee {
+  margin: 8px 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #888;
+}
+
+p.error-msg {
+  color: red;
+  padding: 0 15px;
+}
+p.success {
+  color: green;
+  padding: 0 15px;
+}

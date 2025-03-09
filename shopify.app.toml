@@ -1,0 +1,36 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "d20709a3baa8c6ec25ae23e30cfd2797"
+application_url = "https://magnetic-happens-enormous-days.trycloudflare.com"
+embedded = true
+name = "qr-code-app"
+handle = "qr-code-app-313"
+
+[webhooks]
+api_version = "2025-01"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/scopes_update" ]
+  uri = "/webhooks/app/scopes_update"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://magnetic-happens-enormous-days.trycloudflare.com/auth/callback",
+  "https://magnetic-happens-enormous-days.trycloudflare.com/auth/shopify/callback",
+  "https://magnetic-happens-enormous-days.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "ashit-app-store.myshopify.com"
+automatically_update_urls_on_dev = true
